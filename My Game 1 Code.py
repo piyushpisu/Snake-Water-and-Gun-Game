@@ -35,7 +35,7 @@ for i in range(1,rounds+1):
 	elif x==3:
 		computer='g'
 
-	human=input("Human Turn-snake(s=1)water(w=2)gun(g=2)- ",)
+	human=input("Human Turn-snake(s)water(w)gun(g)- ",)
 	if human =="w":
 		pass
 	elif human =="s":
