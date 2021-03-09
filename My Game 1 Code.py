@@ -25,7 +25,9 @@ rounds=int(input("How Many Rounds You Want to Play - "))
 print("\n")
 
 for i in range(1,rounds+1):
-	print("Computer Turn-snake(s=1)water(w=2)gun(g=2)-??\n")
+	print("---------------------------------------------------------------\n")
+	print("ROUND",i,"\n")
+	print("Computer Turn- snake(s)water(w)gun(g)-??\n")
 
 	x=random.randint(1,3)
 	if x==1:
@@ -35,7 +37,7 @@ for i in range(1,rounds+1):
 	elif x==3:
 		computer='g'
 
-	human=input("Human Turn-snake(s)water(w)gun(g)- ",)
+	human=input("Human Turn- snake(s)water(w)gun(g)- ",)
 	if human =="w":
 		pass
 	elif human =="s":
@@ -46,7 +48,7 @@ for i in range(1,rounds+1):
 		print("Please Choose a Value out of s,w,g")
 		break
 	print("\n")
-	print("ROUND",i,"\n")
+	
 	print(f"Computer Chooses- {computer}\n")
 	print(f"Human Chooses- {human}\n")
 
@@ -60,14 +62,16 @@ for i in range(1,rounds+1):
 		print("Computer Won \n")
 		computer_score+=1
 	i+=1
-
+	
 	if i==rounds+1:
-			print(f"Computer Score is {computer_score}\n")
-			print(f"Human Score is {human_score}\n")
+		print("---------------------------------------------------------------\n")
+		print("---------------------------------------------------------------\n")
+		print(f"Final Computer Score is {computer_score}\n")
+		print(f"Final Human Score is {human_score}\n")
 
-			if computer_score>human_score:
-				print("Computer Won the Series by",computer_score,"-",human_score,"\n")
-			elif human_score>computer_score:
-				print("Human Won the Series by",human_score,"-",computer_score,"\n")
-			else:
-				print("Series Draw with Score",human_score,"-",computer_score)
+		if computer_score>human_score:
+			print("Computer Won the Series by",computer_score,"-",human_score,"\n")
+		elif human_score>computer_score:
+			print("Human Won the Series by",human_score,"-",computer_score,"\n")
+		else:
+			print("Series Draw with Score",human_score,"-",computer_score)
