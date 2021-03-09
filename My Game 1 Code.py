@@ -25,7 +25,7 @@ rounds=int(input("How Many Rounds You Want to Play - "))
 
 for i in range(1,rounds+1):
 	print("Computer Turn-snake(s=1)water(w=2)gun(g=2)-??\n")
-	print("\n"
+	print("\n")
 
 	x=random.randint(1,3)
 	if x==1:
