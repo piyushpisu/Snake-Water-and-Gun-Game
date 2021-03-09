@@ -45,18 +45,19 @@ for i in range(1,rounds+1):
 	else:
 		print("Please Choose a Value out of s,w,g")
 		break
-
+	print("\n")
+	print("ROUND",i,"\n")
 	print(f"Computer Chooses- {computer}\n")
 	print(f"Human Chooses- {human}\n")
 
 	a = GameWon(computer,human)
 	if a==None:
-		print("Round",i,"- Tie \n")
+		print("Match Tie \n")
 	elif a==human:
-		print("Round",i,"- Human Won \n")
+		print("Human Won \n")
 		human_score+=1
 	elif a==computer:
-		print("Round",i,"- Computer Won \n")
+		print("Computer Won \n")
 		computer_score+=1
 	i+=1
 
